@@ -1,0 +1,20 @@
+{
+  "name": "brix36",
+  "description": "Brix36: films and music videos where you're the star.",
+  "owner": {
+    "name": "Brix36",
+    "url": "https://brix36.com"
+  },
+  "plugins": [
+    {
+      "name": "brix36",
+      "source": "./plugins/brix36",
+      "description": "Films and music videos. You're the star.",
+      "category": "creative",
+      "tags": [
+        "film",
+        "music-video"
+      ]
+    }
+  ]
+}

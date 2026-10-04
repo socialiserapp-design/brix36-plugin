@@ -1,0 +1,13 @@
+{
+  "name": "brix36",
+  "version": "1.0.0",
+  "description": "Films and music videos. You're the star. Plan a film or music video in chat, approve the credit price once, and get the finished video link.",
+  "author": {
+    "name": "Brix36",
+    "url": "https://brix36.com"
+  },
+  "homepage": "https://brix36.com",
+  "repository": "https://github.com/socialiserapp-design/brix36-plugin",
+  "license": "MIT",
+  "keywords": ["film", "music-video", "video", "storyboard"]
+}
