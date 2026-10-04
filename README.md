@@ -11,7 +11,7 @@ Brix36 makes films and music videos starring you or your artist. With this plugi
 In Claude Code:
 
 ```
-/plugin marketplace add socialiserapp-design/brix36-plugin
+/plugin marketplace add https://github.com/socialiserapp-design/brix36-plugin.git
 /plugin install brix36@brix36
 ```
 
