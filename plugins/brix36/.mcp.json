@@ -2,7 +2,8 @@
   "mcpServers": {
     "brix36": {
       "type": "http",
-      "url": "https://api.brix36.com/mcp"
+      "url": "https://api.brix36.com/mcp",
+      "oauth": {}
     }
   }
 }

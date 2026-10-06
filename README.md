@@ -27,7 +27,7 @@ You need a Brix36 account. Each person signs in with their own account through B
 
 ## Credits and approval
 
-Brix36 uses credits. Claude shows the exact credits for the whole job and spends nothing until you approve. One approval covers the pictures and the video up to that amount. If you are short of credits, top up in the Brix36 app or on brix36.com.
+Brix36 uses the credits on your own account. Claude shows the price for the whole job and spends nothing until you say yes. One approval covers that job. If you are short of credits, top up in the Brix36 app or on brix36.com.
 
 ## Help
 
