@@ -1,7 +1,7 @@
 {
   "name": "brix36",
-  "version": "1.1.1",
-  "description": "Make a film or music video with your Brix36 account. You see the credit price and approve once before anything is charged.",
+  "version": "1.2.0-library",
+  "description": "Find, play, rename and download the finished Brix36 videos already in your account. Nothing here makes new videos or spends credits.",
   "author": {
     "name": "Brix36",
     "url": "https://brix36.com"
@@ -10,10 +10,15 @@
   "repository": "https://github.com/socialiserapp-design/brix36-plugin",
   "license": "MIT",
   "keywords": [
-    "film",
+    "video-library",
+    "finished-videos",
     "music-video",
-    "video",
-    "storyboard"
+    "film",
+    "download"
   ],
-  "privacyPolicyUrl": "https://legal.brix36.com/privacy"
+  "icon": "./.claude-plugin/icon.png",
+  "documentationUrl": "https://brix36.com/connect",
+  "supportUrl": "https://legal.brix36.com/support",
+  "privacyPolicyUrl": "https://legal.brix36.com/privacy",
+  "termsOfServiceUrl": "https://legal.brix36.com/terms"
 }

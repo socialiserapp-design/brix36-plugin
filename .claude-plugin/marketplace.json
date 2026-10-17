@@ -1,19 +1,24 @@
 {
   "name": "brix36",
-  "description": "Brix36: films and music videos where you're the star.",
   "owner": {
     "name": "Brix36",
     "url": "https://brix36.com"
+  },
+  "metadata": {
+    "description": "Find, play, rename and download the finished Brix36 videos already in your account. Nothing here makes new videos or spends credits.",
+    "version": "1.2.0-library"
   },
   "plugins": [
     {
       "name": "brix36",
       "source": "./plugins/brix36",
-      "description": "Films and music videos. You're the star.",
-      "category": "creative",
+      "description": "Find, play, rename and download the finished Brix36 videos already in your account. Nothing here makes new videos or spends credits.",
+      "version": "1.2.0-library",
+      "category": "productivity",
       "tags": [
-        "film",
-        "music-video"
+        "video-library",
+        "music-video",
+        "film"
       ]
     }
   ]
