@@ -1,32 +1,40 @@
-# Installing the Brix36 MCP server
+# Installing the Brix36 video library for Claude
 
-Brix36 is a hosted, remote MCP server. There is nothing to clone, build or run locally.
+The Brix36 video library is a hosted, remote MCP server. It works only with finished Brix36 videos already in the signed-in account. There is nothing to run locally.
 
-- Endpoint: `https://api.brix36.com/mcp`
+- Endpoint: `https://api.brix36.com/mcp/anthropic-library`
 - Transport: Streamable HTTP
-- Auth: OAuth 2.1 with PKCE and dynamic client registration. The user signs in on Brix36's own sign-in page. No API key is needed and none should be put in the config.
+- Auth: OAuth 2.1 with PKCE and dynamic client registration. The user signs in on Brix36's own sign-in page. No API key is needed and none should go in the config.
 
-## Steps
+## Claude Code
 
-1. Add this server to the MCP settings file (for Cline, `cline_mcp_settings.json`):
-
-```json
-{
-  "mcpServers": {
-    "brix36": {
-      "type": "streamableHttp",
-      "url": "https://api.brix36.com/mcp"
-    }
-  }
-}
+```
+/plugin marketplace add https://github.com/socialiserapp-design/brix36-plugin.git
+/plugin install brix36@brix36
 ```
 
-2. When the client connects, it opens the Brix36 sign-in page in the browser. Ask the user to sign in (or create an account at https://brix36.com) and approve access.
-3. After sign-in the tools appear. A good first check is to ask for the user's recent Brix36 videos.
+The plugin brings the connector from `plugins/brix36/.mcp.json` and the skill `find-play-and-download-your-videos`. Sign in to Brix36 when asked, or run `/mcp` and choose `brix36`.
+
+## Claude custom connector
+
+In Claude, open Settings, then Connectors, then Add custom connector, and enter `https://api.brix36.com/mcp/anthropic-library`. Claude opens the Brix36 sign-in page.
+
+## Tools
+
+All five tools work on finished videos already in the account.
+
+- `studio_projects_list` lists finished videos, newest first.
+- `studio_artists_list` lists the account's artists, for filtering by artist.
+- `studio_video_preview` returns a temporary playback link.
+- `studio_video_export` returns a temporary download link.
+- `studio_project_rename` renames one finished video. It is the only tool that changes anything.
+
+A good first check is to ask for the user's latest Brix36 videos.
 
 ## Notes
 
-- Making a film, music video or image uses credits on the user's own Brix36 account. The tools show the price first and spend nothing until the user says yes.
-- If the client does not support OAuth for remote servers, update it to a version that does. The server answers HTTP 401 with an OAuth challenge until the user signs in; that is expected.
-- Setup guide: https://brix36.com/connect
+- This connector never makes new videos and never spends credits.
+- Before sign-in, a tool call answers HTTP 401 with an OAuth challenge. That is expected.
+- Privacy: https://legal.brix36.com/privacy
+- Terms: https://legal.brix36.com/terms
 - Support: https://legal.brix36.com/support
